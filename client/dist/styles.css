@@ -1,0 +1,22 @@
+.accordion {
+  border: 1px solid black;
+  padding: 0px 10px;
+  margin: 5px 0px;
+}
+
+.accordion img {
+  max-inline-size: 20px;
+  float: right;
+}
+
+.open {
+  background-color: lavender;
+}
+
+.closed img {
+  transform: rotate(-90deg);
+}
+
+.inner-text {
+  margin: 0px 0px 10px 0px;
+}
