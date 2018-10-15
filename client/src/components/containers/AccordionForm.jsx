@@ -17,8 +17,12 @@ class AccordionForm extends React.Component {
       <div>
         <form onSubmit={(event) => {
           event.preventDefault()
-          this.props.dispatch(addAccordion(this.state.header, this.state.text))
-          this.setState({header: '', text: ''})
+          if (this.state.header && this.state.text) {
+            this.props.dispatch(addAccordion(this.state.header, this.state.text))
+            this.setState({header: '', text: ''})
+          } else {
+            alert('You must input both a header and body to add an accordion.')
+          }
         }}>
           <h4>Header:</h4>
           <input type="text" value={this.state.header} onChange={(event) => this.setState({header: event.target.value})}/>
