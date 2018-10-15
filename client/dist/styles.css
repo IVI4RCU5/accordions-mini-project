@@ -21,16 +21,11 @@
   margin: 0px 0px 10px 0px;
 }
 
-.header-input {
+form input {
   width: 50%;
 }
 
-.body-input {
-  height: 100px;
-  width: 50%;
-}
-
-.submit-button {
+form button {
   display: block;
   margin-top: 20px;
 }
